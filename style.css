@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    /* background: #2a5c7e; */
+    background: linear-gradient(to left top, #c93385, #e69b00);
+}
+
+.wrapper {
+    background: #fff;
+    width: 450px;
+    padding: 25px;
+    border-radius: 7px;
+    opacity: 0.35;
+}
+
+.wrapper:hover {
+    opacity: 1;
+}
+
+.wrapper .gradient-box {
+    width: 100%;
+    height: 220px;
+    border-radius: 7px;
+    background: linear-gradient(to left top, #c93385, #e69b00);
+}
+
+.wrapper .row {
+    display: flex;
+    margin: 20px 0;
+    justify-content: space-between;
+}
+
+.options p {
+    font-size: 1.12rem;
+    margin-bottom: 8px;
+}
+
+.options .select-box {
+    padding: 10px 15px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+.select-box select {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.12rem;
+}
+
+.colors input {
+    width: 60px;
+    height: 40px;
+}
+
+.column {
+    width: calc(100% / 2 - 20px);
+}
+
+.colors input:last-child {
+    margin-left: 6px;
+}
+
+.wrapper textarea {
+    width: 100%;
+    padding: 10px 15px;
+    color: #333;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    resize: none;
+    font-size: 1.05rem;
+}
+
+.buttons button {
+    padding: 15px 0;
+    font-size: 1.09rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    width: 45%;
+    cursor: pointer;
+    color: #fff;
+    margin: 0 0 -15px;
+}
+
+.buttons .refresh {
+    background: #2a5c7e;
+}
+
+.buttons .copy {
+    background: #e69b00;
+}
+
+.wrapper:hover {
+    /* box-shadow: 0 0 70px #e69b00; */
+    box-shadow: 0 0 50px #fff;
+}
+
+.wrapper {
+    /* box-shadow: 0 0 50px #fff; */
+    transition: .75s ease;
+}
+
+.copy:hover {
+    background-color: #db5800;
+}
+
+.refresh:hover {
+    background-color: #00a8e0;
+}
